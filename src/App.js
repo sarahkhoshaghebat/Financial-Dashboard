@@ -1,22 +1,11 @@
-import incomeStatement from "./data/incomeStatement";
+import "./App.css";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <h1>Financial Dashboard</h1>
-
-      {incomeStatement.map((item) => {
-        const netProfit =
-          item.revenue - item.cogs - item.expenses;
-
-        return (
-          <div key={item.month}>
-            <h3>{item.month}</h3>
-            <p>Revenue: {item.revenue}</p>
-            <p>Net Profit: {netProfit}</p>
-          </div>
-        );
-      })}
+      <Dashboard />
     </div>
   );
 }
