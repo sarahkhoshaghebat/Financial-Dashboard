@@ -1,13 +1,8 @@
-import "./App.css";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  return (
-    <div className="container">
-      <h1>Financial Dashboard</h1>
-      <Dashboard />
-    </div>
-  );
+  return <Dashboard />;
 }
 
 export default App;
+

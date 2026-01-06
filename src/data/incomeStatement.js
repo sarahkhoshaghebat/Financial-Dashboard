@@ -1,22 +1,22 @@
-const incomeStatement = [
+const incomeData = [
   {
     month: "Jan",
     revenue: 85000,
-    cogs: 42000,
-    expenses: 18000
+    expenses: 18000,
+    profit: 25000,
   },
   {
     month: "Feb",
     revenue: 92000,
-    cogs: 46000,
-    expenses: 19000
+    expenses: 19000,
+    profit: 27000,
   },
   {
     month: "Mar",
     revenue: 98000,
-    cogs: 48000,
-    expenses: 21000
-  }
+    expenses: 21000,
+    profit: 29000,
+  },
 ];
 
-export default incomeStatement;
+export default incomeData;
