@@ -1,6 +1,10 @@
 import Header from "../components/Header";
 import FinanceCard from "../components/FinanceCard";
+import RevenueChart from "../components/RevenueChart";
 import { financialData } from "../data/financialData";
+import FinancialRatios from "../components/FinancialRatios";
+import BudgetVsActual from "../components/BudgetVsActual";
+
 
 function Dashboard() {
   return (
@@ -17,6 +21,8 @@ function Dashboard() {
           />
         ))}
       </div>
+
+      <RevenueChart data={financialData} />
     </div>
   );
 }
@@ -33,5 +39,13 @@ const styles = {
     justifyContent: "center",
   },
 };
+
+<>
+<FinancialRatios data={financialData} />
+<BudgetVsActual />
+</>
+
+
+
 
 export default Dashboard;
